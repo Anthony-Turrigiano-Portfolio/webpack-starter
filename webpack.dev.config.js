@@ -8,6 +8,7 @@
  * Import module dependencies
  */
 
+/*eslint-disable semi, no-undef, no-empty-label*/
 import path                 from 'path'
 import webpack              from 'webpack'
 import CleanWebpackPlugin   from 'clean-webpack-plugin'
@@ -37,12 +38,13 @@ config.devServer = {
     hot: true,
     inline: true,
     compress: true,
+    host: '0.0.0.0',
     port: process.env.PORT || 3000,
     historyApiFallback: true,
     clientLogLevel: "none",
     https: false,
     quiet: true,
-    public: 'http://localhost:3000',
+    public: 'webpackstarter.localtunnel.me',
     overlay: {
         warnings: true,
         errors: true
@@ -83,7 +85,7 @@ config.module = {
 
         {
             test: /\.(sass|scss|css)$/,
-            use: ['style-loader', 'css-loader', 'sass-loader' ]
+            use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader' ]
         }
     
     ]
