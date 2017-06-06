@@ -33,7 +33,7 @@ const config = {
  */
 
 config.entry = {
-    app:    [ './app', './scss/style', './views/index', 'jquery', 'waypoints']
+    app:    [ './app', './scss/style', './views/index', 'jquery', 'bootstrap-sass', 'waypoints']
 }
 
 /**
@@ -82,13 +82,23 @@ config.module = {
         },
 
         /**
+         * Test for html files
+         */
+
+        {
+            test: /\.html$/,
+            exclude: /node_modules/,
+            use: 'happypack/loader?id=html'
+        },
+
+        /**
          * Test for javascript and jsx files
          */
 
         {
             test: /\.jsx?$/,
             exclude: /node_modules/,
-            use: ['babel-loader']
+            use: 'happypack/loader?id=babel'
         },
         
         /**
@@ -104,7 +114,7 @@ config.module = {
                     loader: 'file-loader',
                     options: {
                         name: '../fonts/[name].[ext]',
-                        publicPath: '../fonts/',
+                        publicPath: '../',
                         outputPath: 'public/fonts/'
                     }                
                 }
@@ -147,8 +157,11 @@ config.plugins = [
     new webpack.ProvidePlugin({
         $: 'jquery',
         jquery: 'jQuery',
+        jQuery: 'jquery',
         "window.jQuery": 'jquery',
-        "windows.jQuery": 'jquery'
+        "windows.jQuery": 'jquery',
+
+
      }),
 
    /**
@@ -182,8 +195,13 @@ config.plugins = [
      */
     new HappyPack({
         id: 'babel',
-        threads: 2,
+        threads: 4,
         loaders: [ 'babel-loader' ]
+    }),
+    new HappyPack({
+        id: 'html',
+        threads: 4,
+        loaders: [ 'html-loader' ]
     })
 
 ]
