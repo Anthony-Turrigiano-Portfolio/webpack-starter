@@ -1,4 +1,10 @@
 @import './vendors/base';
+@import './utils/base';
+@import './base/base';
+@import './themes/base';
+@import './layout/base';
+@import './components/base';
+@import './pages/base';
 
 html{
     font-size: 62.5%;
@@ -15,4 +21,20 @@ html,
 body,
 .wrapper{
     height: 100%;
+}
+
+.branding__title{
+    font-weight: bold;
+}
+
+.navbar{
+    margin-bottom: 0;
+}
+
+.hero{
+    height: 350px;
+}
+
+.jumbotron{
+    border-radius: 0;
 }

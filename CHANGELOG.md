@@ -1,3 +1,8 @@
+# 1.0.2 - 06-13-2017
+- Remove clean-webpack-plugin from webpack-dev-config
+- Update index.pug template
+- Add components, layput, pages, themes, utils folders inside scss folder
+
 # 1.0.1 - 06-05-2017
 - Add postcss-loader to list of loaders for styles in the webpack.dev.config.js file
 - Install localhost and concurrently to make webpack-dev-server more compatiable with other platforms

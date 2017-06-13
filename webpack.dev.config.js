@@ -98,18 +98,6 @@ config.module = {
 config.plugins = [
 
     /**
-     * Use clean-webpack-plugin to delete the dist directory 
-     * when running npm-dev
-     */
-
-    new CleanWebpackPlugin([ "dist" ], {
-       root: __dirname,
-       exclude: [],
-       verbose: true,
-       dry: true
-   }),
-
-    /**
      * The two plugins are needed for Hot Module Replacement (HMR)
      */
 
