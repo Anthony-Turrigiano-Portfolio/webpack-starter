@@ -1,3 +1,5 @@
+# 1.0.3 - 06-15-2017
+- Fix typo in webpack.dev.config.js - progress key was spelled wrong
 # 1.0.2 - 06-13-2017
 - Remove clean-webpack-plugin from webpack-dev-config
 - Update index.pug template
