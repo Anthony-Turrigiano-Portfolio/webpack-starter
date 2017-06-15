@@ -56,7 +56,7 @@ config.devServer = {
     stats: {
         colors: true,
         chunks: true,
-        preogress: true
+        progress: true
     }
 }
 
