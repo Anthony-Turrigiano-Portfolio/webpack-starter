@@ -43,7 +43,7 @@ config.entry = {
  */
 
 config.resolve = {
-    extensions: ['.js','.scss', '.sass', '.less', '.css', '.html', '.ts', '.pug'],
+    extensions: ['.js', 'jsx', '.scss', '.sass', '.less', '.css', '.html', '.ts', '.pug'],
     alias: {
       'waypoints': 'waypoints/lib/jquery.waypoints.min.js',
       'sticky': '../node_modules/waypoints/lib/shortcuts/sticky.min.js'
