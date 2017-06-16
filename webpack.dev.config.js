@@ -1,5 +1,5 @@
 /**
- * webpackdev.config.js
+ * webpack.dev.config.js
  * @author: Anthony Turrigiano <anthony.turrigiano@gmail.com>
  * @description: Webpack configuration settings for development environment
  */
