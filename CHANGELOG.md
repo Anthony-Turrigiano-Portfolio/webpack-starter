@@ -1,5 +1,6 @@
 # 1.0.4 - 06-16-2017
 - Fix typo in webpack.dev.config.js - add a dot between webpack.dev.config.js in line 2 of the comments
+- Update comment in line 2
 
 # 1.0.3 - 06-15-2017
 - Fix typo in webpack.dev.config.js - progress key was spelled wrong
