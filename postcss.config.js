@@ -1,5 +1,5 @@
 /**
- * webpack.config.js
+ * postcss.config.js
  * @author: Anthony Turrigiano <anthony.turrigiano@gmail.com>
  * @description: postcss config list of plugins that will run 
  */
