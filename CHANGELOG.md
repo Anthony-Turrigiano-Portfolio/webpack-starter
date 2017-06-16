@@ -1,6 +1,10 @@
+# 1.0.4 - 06-16-2017
+- Fix typo in webpack.dev.config.js - add a dot between webpack.dev.config.js in line 2 of the comments
+
 # 1.0.3 - 06-15-2017
 - Fix typo in webpack.dev.config.js - progress key was spelled wrong
 - Add .jsx extension to resolve list
+
 # 1.0.2 - 06-13-2017
 - Remove clean-webpack-plugin from webpack-dev-config
 - Update index.pug template
