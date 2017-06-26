@@ -9,12 +9,13 @@
  */
 
 import path                             from 'path'
+import glob                             from 'glob'
 import cssnano                          from 'cssnano'
 import webpack                          from 'webpack'
 import HappyPack                        from 'happypack'
 import CleanWebpackPlugin               from 'clean-webpack-plugin'
 import WebpackShellPlugin               from 'webpack-shell-plugin'
-import PurifyCssWebackPlugin            from 'purifycss-webpack-plugin'
+import PurifyCssWeback                  from 'purifycss-webpack'
 import UnminifiedWebpackPlugin          from 'unminified-webpack-plugin'
 import ExtractTextWebpackPlugin         from 'extract-text-webpack-plugin'
 import OptimizeCssAssetsWebpackPlugin   from 'optimize-css-assets-webpack-plugin'
@@ -132,9 +133,8 @@ config.plugins = [
      * Remove any unused css 
      */
 
-    new PurifyCssWebackPlugin({
-        basePath: __dirname,
-        paths: ['src/views/*.pug']
+    new PurifyCssWeback({
+        paths: glob.sync(path.join(__dirname, 'src/views/*.pug')),
     }),
 
     /**

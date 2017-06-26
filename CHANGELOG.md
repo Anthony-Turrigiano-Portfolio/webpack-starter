@@ -1,3 +1,8 @@
+# 1.0.5 - 06-26-2017 
+- Update webpack.common.config.js refractors excludeAssets key under HtmlWebPack plugin so that style.[chunkname].css does not get included in the head of index.html file
+- Update purifycss plugin 
+- Refractored index.pug file ( added image to hero )
+
 # 1.0.4 - 06-16-2017
 - Fix typo in webpack.dev.config.js - add a dot between webpack.dev.config.js in line 2 of the comments
 - Update comment in line 2

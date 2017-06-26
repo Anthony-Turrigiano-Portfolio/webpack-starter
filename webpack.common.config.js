@@ -48,6 +48,7 @@ config.resolve = {
       'waypoints': 'waypoints/lib/jquery.waypoints.min.js',
       'sticky': '../node_modules/waypoints/lib/shortcuts/sticky.min.js'
     }
+
 }
 
 config.module = {
@@ -172,7 +173,7 @@ config.plugins = [
    new HtmlWebpackPlugin({
         title: "Home Page",
         template: 'views/index.pug',
-        excludeAssets: [/style.*.js/, /style.css/],
+        excludeAssets: [/style.*.js/, /style.*.[^min].css/],
         chunks: ['app'],
         minify: {
                collapseWhitespace: true
