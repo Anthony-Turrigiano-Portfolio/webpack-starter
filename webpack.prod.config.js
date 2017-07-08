@@ -165,7 +165,7 @@ config.plugins = [
      */
     new webpack.optimize.CommonsChunkPlugin({
         name: "vendor",
-        chunks: []
+        chunks: ['vendor']
     }),
 
     /**

@@ -1,6 +1,6 @@
 {
   "name": "webpack-starter",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -54,7 +54,7 @@
     "typescript": "^2.3.4",
     "unminified-webpack-plugin": "^1.2.0",
     "waypoints": "^4.0.1",
-    "webpack": "^2.6.1",
+    "webpack": "^3.1.0",
     "webpack-config": "^7.0.0",
     "webpack-dev-server": "^2.4.5",
     "webpack-merge": "^4.1.0",

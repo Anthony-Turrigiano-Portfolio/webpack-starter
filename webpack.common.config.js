@@ -33,7 +33,8 @@ const config = {
  */
 
 config.entry = {
-    app:    [ './app', './scss/style', './views/index', 'jquery', 'bootstrap-sass', 'waypoints']
+    app: [ './app', './scss/style', './views/index', 'jquery', 'bootstrap-sass', 'waypoints'],
+    
 }
 
 /**
@@ -161,9 +162,13 @@ config.plugins = [
         jQuery: 'jquery',
         "window.jQuery": 'jquery',
         "windows.jQuery": 'jquery',
-
-
      }),
+
+   /**
+    * Scope Hoisting, introduced with version 3+ of webpack  
+    */
+
+     new webpack.optimize.ModuleConcatenationPlugin(),
 
    /**
     * Best practices to delete the output directory before building 
@@ -174,7 +179,7 @@ config.plugins = [
         title: "Home Page",
         template: 'views/index.pug',
         excludeAssets: [/style.*.js/, /style.*.[^min].css/],
-        chunks: ['app'],
+        chunks: ['app', 'vendor'],
         minify: {
                collapseWhitespace: true
             }

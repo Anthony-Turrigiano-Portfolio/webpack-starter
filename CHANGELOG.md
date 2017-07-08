@@ -1,3 +1,7 @@
+# 1.0.6 - 07-07-2017
+- Update to Webpack 3.1.0
+- Added Scope Hoisting support
+
 # 1.0.5 - 06-26-2017 
 - Update webpack.common.config.js refractors excludeAssets key under HtmlWebPack plugin so that style.[chunkname].css does not get included in the head of index.html file
 - Update purifycss plugin 
