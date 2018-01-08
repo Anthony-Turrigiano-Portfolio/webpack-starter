@@ -11,7 +11,6 @@ import path                             from 'path'
 import webpack                          from 'webpack'
 import HappyPack                        from 'happypack'
 import HtmlWebpackPlugin                from 'html-webpack-plugin'
-import CleanWebpackPlugin               from 'clean-webpack-plugin'
 import HtmlWebpackExcludeAssetsPlugin   from 'html-webpack-exclude-assets-plugin'
 
 /**
@@ -168,12 +167,7 @@ config.plugins = [
     * Scope Hoisting, introduced with version 3+ of webpack  
     */
 
-     new webpack.optimize.ModuleConcatenationPlugin(),
-
-   /**
-    * Best practices to delete the output directory before building 
-    * a new project 
-    */    
+   new webpack.optimize.ModuleConcatenationPlugin(),   
 
    new HtmlWebpackPlugin({
         title: "Home Page",
