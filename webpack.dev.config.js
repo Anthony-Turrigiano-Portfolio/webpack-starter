@@ -11,7 +11,6 @@
 /*eslint-disable semi, no-undef, no-empty-label*/
 import path                 from 'path'
 import webpack              from 'webpack'
-import CleanWebpackPlugin   from 'clean-webpack-plugin'
 
 /**
  * config variable, this will be used to 
