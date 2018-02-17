@@ -7,7 +7,6 @@
 /**
  * Import module dependencies
  */
-import path from 'path'
 import WebpackConfig from 'webpack-config'
 import webpackDevConfig from './webpack.dev.config'
 import webpackCommonConfig from './webpack.common.config'
